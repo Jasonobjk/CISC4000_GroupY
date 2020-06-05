@@ -65,8 +65,8 @@ Camera received Image             |  Camera Output Image
 
 ### Contact information ###
 Students:
- * Chiang Weng Hou, email: jasonobjk@gmail.com
- * Tai Chon Kit   , email: tears0147@gmail.com
+ * Jason, email: jasonobjk@gmail.com
+ * Randy, email: tears0147@gmail.com
 
 Supervisor:
  * Prof. C. M. Vong
