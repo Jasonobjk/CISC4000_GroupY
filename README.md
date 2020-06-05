@@ -7,11 +7,11 @@ Python implementation in binary classification of parking lot occupancy detectio
  * Development of techniques in generative modeling for dealing with illuminance variance.
  * An integrated smart parking lots detection system applicable to outdoor parking lots
 
-
-
 ![](demo/Final_result_sample.png)
 
-
-
-
 ---
+
+### Requirements ###
+1. Python >= 3.0
+2. Tensorflow >= 2.5.0
+3. numpy, PIL
