@@ -9,7 +9,7 @@ Python implementation in binary classification of parking lot occupancy detectio
 
 
 
-
+![](demo/Final_result_sample.png)
 
 
 
