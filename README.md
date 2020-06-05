@@ -31,21 +31,41 @@ This project depends on the following libraries:
 
 The original dataset is from [CNR-EXT](http://cnrpark.it/) and [PKLot](https://web.inf.ufpr.br/vri/databases/parking-lot-database/), and I've downloaded it and done the pre-processing.
 
-You can find it in .
+You can find it in src/CNN_data.py, or https://drive.google.com/drive/folders/1RMCSkA3DoDFy4S1Rwc8Pcog2HOmrjICI?usp=sharing, or FYP_FULL_version_05_06_2020.ipynb to get the train, test, and validation dataset.
 
 ### Data augmentation ###
 
-The data for training contains 30 512*512 images, which are far not enough to feed a deep learning neural network. I use a module called ImageDataGenerator in keras.preprocessing.image to do data augmentation.
+The data for training contains few sunshine dataset, which are far not enough to feed a deep learning convolutional neural network (CNN), due to the low performance in generalization ability. I use a module called ImageDataGenerator in keras.preprocessing.image and a common image-to-image translation technology CycleGAN to do data augmentation.
 
-See dataPrepare.ipynb and CNN_data.py for detail.
+See dataPrepare.ipynb or FYP_FULL_version_05_06_2020.ipynb for detail.
 
 ### Training  Usage ###
+
+Use the train_CNN_Model.ipynb or FYP_FULL_version_05_06_2020.ipynb to train the CNN model by the train and validation dataset. Callbacks function used to avoid overfitting problem, and Focal loss used to improve the performance after data augmentation
+
+![](demo/model_Training.png)
+
+### Testing  Usage ###
+Use the FYP_FULL_version_05_06_2020.ipynb to test the CNN model in Testing model part. First, we choose the CNN model to load by two categories. One is using focal loss, another is Python library loss function.
+
+![](demo/load_model.png)
+
+Then, we can load the sample image in data/parkingLot_image_sample.jpg and data/camera8.csv to get the detection result by CNN model. i.e. run # One example with binary CNN classification model
+
+![](demo/parkingspace_detect_result.jpg)
+
+Also, we can download the video from [Google drive link](https://drive.google.com/drive/folders/19CvrTMxMLYRxb9W1pxiFs1ecgBuy3W-2?usp=sharing) or https://www.youtube.com/watch?time_continue=3&v=HnJYSWY60nA. And run the 'Sample simulation realistic working process in smart camera' part. Get the result in the first image demo/Final_result_sample.png.
+
+### Objectives
+Camera received Image             |  Camera Output Image
+:-------------------------:|:-------------------------:
+![](data/parkingLot_image_sample.jpg)  |  ![](demo/parkingspace_detect_result.jpg)
 
 ---
 
 ### Contact information ###
 Students:
- * Chiang Weng Hou, email: wenghouchiang@gmail.com
+ * Chiang Weng Hou, email: jasonobjk@gmail.com
  * Tai Chon Kit   , email: tears0147@gmail.com
 
 Supervisor:
