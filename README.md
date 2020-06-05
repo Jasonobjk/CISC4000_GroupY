@@ -3,7 +3,7 @@
 
 Python implementation in binary classification of parking lot occupancy detection under the illuminance variance via smart camera. It based on Convolutional Neural Network model. The aims and expected deliverables is:
  * Development of CNN model specifically for parking lots.
- * Development of an integrated smart parking lots detection system, see Fig.1 for demo result.
+ * Development of an integrated smart parking lots detection system.
  * Development of techniques in generative modeling for dealing with illuminance variance.
  * An integrated smart parking lots detection system applicable to outdoor parking lots
 
